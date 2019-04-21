@@ -1,0 +1,12 @@
+{
+  "database": "diadem",
+  "username": "db-user",
+  "password": "db-password",
+  "params": {
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false,
+    "port": 32768,
+    "logging": false
+  }
+}

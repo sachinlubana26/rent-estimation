@@ -1,0 +1,45 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/api/v1",
+  "schemes": ["http"],
+  "produces": ["application/json"],
+  "paths": {
+    "/search": {
+      "get": {
+        "tags": ["Search estimated rent "],
+        "summary": "Search for estimated rent for given apartment rent and area",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        },
+        "content": {
+          "application/json": {}
+        },
+        "parameters": [
+          {
+            "name": "zip_code",
+            "in": "query",
+            "description": "Zip code of the location for the rent estimation",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "name": "apartment_area",
+            "in": "query",
+            "description": "Apartment area for the rent estimation",
+            "required": true,
+            "type": "number"
+          }          
+        ]
+      }
+    }
+  }
+}
