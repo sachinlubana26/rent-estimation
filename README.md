@@ -69,7 +69,7 @@ http://localhost:3000/api/v1/search?zip_code=10119&apartment_area=76
 `apartment_size` size of the apartment
 
 
-### Response:
+### Response
 
 On success, it return `200` HTTP Status with below response
 
